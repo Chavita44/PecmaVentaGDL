@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pecma</title>
@@ -8,82 +8,75 @@
     </head>
     <body>
     <section class="sec1">
-    
+
         <div id="overlay"></div>
         <div class="rec1"></div>
 
         <div class="slider">
-            <img src="/Imagenes/Fot1.png" class="slide active">
-            <img src="/Imagenes/Fot2.png" class="slide">
-            <img src="/Imagenes/Fot3.png" class="slide">
+        <img src="Imagenes/Fot1.png" class="slide active">
+        <img src="Imagenes/Fot2.png" class="slide">
+        <img src="Imagenes/Fot3.png" class="slide">
         </div>
 
-            <!-- Botón 1 -->
-            <button id="btn1" class="bu1">Terrenos</button>
-            <div class="recuadro">
-            <div class="contenido">
-                <h2>Terrenos disponibles para la venta</h2>
+        <!-- Botón 1 -->
+        <button id="btn1" class="bu1">Terrenos</button>
+        <div class="recuadro">
+        <div class="contenido">
+            <h2>Terrenos disponibles para la venta</h2>
+            <img id="img-terreno" class="img-recuadro img-terreno" src="" alt="Imagen Terreno">
+            <button id="vermas-terreno" class="btn-vermas">Ver más</button>
+            <p>Aquí se muestran los terrenos que están disponibles para ser adquiridos</p>
 
-                <img id="img-terreno" class="img-recuadro img-terreno" src="" alt="Imagen Terreno">
-                <button id="vermas-terreno" class="btn-vermas">Ver más</button>
+            <button class="abajoP1" data-img="Imagenes/terrenos/Halo1.png" data-url="HTML/terrenos/terreno1.html" id="ABJ1">Zapopan</button>
+            <button class="abajoP12" data-img="Imagenes/terrenos/Tala.png" data-url="HTML/terrenos/terreno2.html" id="ABJ2">Tala</button>
+            <button class="abajoP13" data-img="Imagenes/terrenos/Halo3.png" data-url="HTML/terrenos/terreno3.html" id="ABJ3">Colima</button>
+            <button class="abajoP14" data-img="Imagenes/terrenos/Halo4.png" data-url="HTML/terrenos/terreno4.html" id="ABJ4">Chapala</button>
 
-                <p>Aquí se muestran los terrenos que estan disponibles para ser aquiridos</p>
+            <button class="btnC" id="CLB1">X</button>
+        </div>
+        </div>
 
-                <button class="abajoP1"  data-img="/Imagenes/terrenos/Halo1.png"  data-url="/HTML/terrenos/terreno1.html" id="ABJ1">Zapopan</button>
-                <button class="abajoP12"  data-img="/Imagenes/terrenos/Tala.png" data-url="/HTML/terrenos/terreno2.html" id="ABJ2">Tala</button>
-                <button class="abajoP13"  data-img="/Imagenes/terrenos/Halo3.png" data-url="/HTML/terrenos/terreno3.html" id="ABJ3">Colima</button>
-                <button class="abajoP14"  data-img="/Imagenes/terrenos/Halo4.png" data-url="/HTML/terrenos/terreno4.html" id="ABJ4">Chapala</button>
+        <!-- Botón 2 -->
+        <button id="btn2" class="bu2">Bodegas</button>
+        <div class="recuadro">
+        <div class="contenido">
+            <h2>Aquí se muestran las bodegas disponibles para su adquisición</h2>
+            <img id="img-bodega" class="img-recuadro img-bodega" src="" alt="Imagen Bodega">
+            <button id="vermas-bodega" class="btn-vermas">Ver más</button>
+            <p>Aquí se muestra la información de las bodegas disponibles</p>
 
-                <button class="btnC" id="CLB1">X</button>
-            </div>
-            </div>
+            <button class="abajoP2" data-img="Imagenes/bodegas/Goku.png" data-url="HTML/bodegas/bodega1.html" id="ABJ1">Bodega industrial</button>
+            <button class="abajoP21" data-img="Imagenes/bodegas/Goku2.png" data-url="HTML/bodegas/bodega2.html" id="ABJ2">Bodega el refugio</button>
+            <button class="abajoP22" data-img="Imagenes/bodegas/Goku3.png" data-url="HTML/bodegas/bodega3.html" id="ABJ3">Bodega MX</button>
+            <button class="abajoP23" data-img="Imagenes/bodegas/Goku4.png" data-url="HTML/bodegas/bodega4.html" id="ABJ4">Bodega Ruiseñores</button>
 
-            <!-- Botón 2 -->
-            <button id="btn2" class="bu2">Bodegas</button>
-            <div class="recuadro">
-            <div class="contenido">
-                <h2>Aqui se muestran las bodegas disponibles para su adquisicion</h2>
+            <button class="btnC" id="CLB1">X</button>
+        </div>
+        </div>
 
-                <img id="img-bodega" class="img-recuadro img-bodega" src="" alt="Imagen Bodega">
-                <button id="vermas-bodega" class="btn-vermas">Ver más</button>
+        <!-- Botón 3 -->
+        <button id="btn3" class="bu3">Otros</button>
+        <div class="recuadro">
+        <div class="contenido">
+            <h2>Información de otros locales y establecimientos</h2>
+            <img id="img-otros" class="img-recuadro img-otros" src="" alt="Imagen Otros">
+            <button id="vermas-otros" class="btn-vermas">Ver más</button>
+            <p>Aquí se muestra la información de otros locales</p>
 
-                <p>Aquí se muestra la información de la bodegas disponibles</p>
+            <button class="abajoP3" data-img="Imagenes/otros/Fre1.png" data-url="HTML/otras/otros1.html" id="ABJ1">Local comercial</button>
+            <button class="abajoP31" data-img="Imagenes/otros/Fre2.png" data-url="HTML/otras/otros2.html" id="ABJ2">Local centro</button>
+            <button class="abajoP32" data-img="Imagenes/otros/Fre3.png" data-url="HTML/otras/otros3.html" id="ABJ3">Local piso 2</button>
+            <button class="abajoP33" data-img="Imagenes/otros/Fre4.png" data-url="HTML/otras/otros4.html" id="ABJ4">Local no comercial</button>
 
-                <button class="abajoP2" data-img="/Imagenes/bodegas/Goku.png"  id="ABJ1" data-url="/HTML/bodegas/bodega1.html">Bodega industrial</button>
-                <button class="abajoP21" data-img="/Imagenes/bodegas/Goku2.png"id="ABJ2" data-url="/HTML/bodegas/bodega2.html">Bodega el refugio</button>
-                <button class="abajoP22" data-img="/Imagenes/bodegas/Goku3.png"id="ABJ3" data-url="/HTML/bodegas/bodega3.html">Bodega MX</button>
-                <button class="abajoP23" data-img="/Imagenes/bodegas/Goku4.png"id="ABJ4" data-url="/HTML/bodegas/bodega4.html">Bodega Ruiseñores</button>
+            <button class="btnC" id="CLB1">X</button>
+        </div>
+        </div>
 
-                <button class="btnC" id="CLB1">X</button>
-            </div>
-            </div>
-
-            <!-- Botón 3 -->
-            <button id="btn3" class="bu3">Otros</button>
-            <div class="recuadro">
-            <div class="contenido">
-                <h2>Información de otros locales y establecimientos</h2>
-
-                <img id="img-otros" class="img-recuadro img-otros" src="" alt="Imagen Otros">
-                <button id="vermas-otros" class="btn-vermas">Ver más</button>
-
-                <p>Aquí se muestra la información de otros locales</p>
-
-                <button class="abajoP3"  data-img="/Imagenes/otros/Fre1.png" id="ABJ1" data-url="/HTML/otros/otros1.html">local comercial</button>
-                <button class="abajoP31" data-img="/Imagenes/otros/Fre2.png" id="ABJ2" data-url="/HTML/otros/otros2.html">local centro</button>
-                <button class="abajoP32" data-img="/Imagenes/otros/Fre3.png" id="ABJ3" data-url="/HTML/otros/otros3.html">local piso 2</button>
-                <button class="abajoP33" data-img="/Imagenes/otros/Fre4.png" id="ABJ4" data-url="/HTML/otros/otros4.html">local no comercial</button>
-
-                <button class="btnC" id="CLB1">X</button>
-            </div>
-            </div>
-            
-        <!-- Botón 4 (abre desde la izquierda) -->
+        <!-- Botón 4 -->
         <button id="btn4" class="bu4">Menu</button>
         <div class="recuadro recuadro-lateral">
         <div class="contenido">
             <h2>Información lateral</h2>
-            
             <p>Contenido del panel lateral</p>
 
             <button class="LateralB1" id="LBTN">Boton1</button>
@@ -97,20 +90,19 @@
         </div>
         </div>
 
-        <a  href="/HTML/Otras/Busq.html">
-            <button class="bu5">Buscar</button>
+        <a href="HTML/otras/Busq.html">
+        <button class="bu5">Buscar</button>
         </a>
 
         <button class="Busq">?</button>
-
         <div class="rec01"></div>
 
-    <div id="rotarPantalla">
+        <div id="rotarPantalla">
         📱 Por favor gira tu dispositivo a modo horizontal para ver mejor esta página.
-    </div>
+        </div>
 
     </section>
-    
+
     <script src="script.js"></script>
-</body>
-</html>
+    </body>
+    </html>
