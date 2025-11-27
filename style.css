@@ -1,0 +1,395 @@
+/* ====== SECCIONES ====== */
+.sec1, .sec2 {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sec1 { top: 0; }
+.sec2 { top: 100%; }
+
+/* ====== RECUADROS Y CONTENIDO ====== */
+.recuadro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    z-index: 10;
+    background: #ffffff;
+    border-bottom: 4px solid #ff7b00;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.recuadro-lateral {
+    width: 0;
+    height: 100vh;
+    transition: width 0.5s ease;
+    background: #ffffff;
+    border-right: 4px solid #ff7b00;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+}
+
+.contenido {
+    opacity: 0;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+}
+
+button {
+    margin: 10px;
+}
+
+/* ====== BOTONES SUPERIORES ====== */
+
+.bu1, .bu2, .bu3, .bu5 {
+    background: #ffffff;
+    position: absolute;
+    top: 15px;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    z-index: 3;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 2px solid #ff7b00;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.bu1 { left: 9%; }
+.bu2 { left: 16%; }
+.bu3 { left: 23%; }
+.bu5 { left: 90%; width: 70px; }
+
+.bu1:hover, .bu2:hover, .bu3:hover, .bu5:hover {
+    background-color: #ff7b00;
+    color: white;
+}
+
+/* ====== BOTÓN FIJO ====== */
+.bu4 {
+    position: fixed;
+    top: 5px;
+    left: -20px;
+    width: 90px;
+    height: 60px;
+    border-radius: 10px;
+    z-index: 3;
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.bu4:hover {
+    background-color: #d96a00;
+}
+
+/* ====== RECUADROS DE COLOR ====== */
+.rec1 {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 11.5%;
+    z-index: 2;
+}
+
+.rec2 {
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+}
+
+.rec3 {
+    width: 50%;
+    height: 90%;
+    background: #213863;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    border-radius: 10px;
+}
+
+/* ====== SLIDER ====== */
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.slider img {
+    position: absolute;
+    top: 11.5%;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+/* ====== OVERLAY ====== */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* ====== CIERRE LATERAL ====== */
+#CLB, #CLB1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+#CLB { position: absolute; top: 1%; left: 80%; }
+#CLB1 { position: absolute; top: 80%; left: 1%; }
+
+#CLB:hover, #CLB1:hover {
+    background-color: #d96a00;
+}
+
+/* ====== BOTÓN LARGO ====== */
+#LBTN {
+    width: 150px;
+    height: 40px;
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+#LBTN:hover {
+    background-color: #d96a00;
+}
+
+/* ====== PÁRRAFOS ABAJO (AGRUPADOS) ====== */
+[class^="abajoP"] {
+    position: absolute;
+    left: 1.3%;
+}
+.abajoP1  { top: 30%; }
+.abajoP12 { top: 40%; }
+.abajoP13 { top: 50%; }
+.abajoP14 { top: 60%; }
+
+.abajoP2  { top: 30%; }
+.abajoP21 { top: 40%; }
+.abajoP22 { top: 50%; }
+.abajoP23 { top: 60%; }
+
+.abajoP3  { top: 30%; }
+.abajoP31 { top: 40%; }
+.abajoP32 { top: 50%; }
+.abajoP33 { top: 60%; }
+
+/* ====== IMAGEN RECUADRO ====== */
+.img-recuadro {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 8%;
+    width: 40%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* ====== BOTONES ABJ ====== */
+#ABJ1, #ABJ2, #ABJ3, #ABJ4 {
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    position: absolute;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+    left: 1%;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+}
+#ABJ1 { top: 25%; }
+#ABJ2 { top: 37%; }
+#ABJ3 { top: 49%; }
+#ABJ4 { top: 61%; }
+
+#ABJ1:hover, #ABJ2:hover, #ABJ3:hover, #ABJ4:hover {
+    background-color: #ffaa33;
+}
+
+/* ====== BOTÓN VER MÁS ====== */
+.btn-vermas {
+    position: absolute;
+    top: 75%;
+    left: 41%;
+    width: 100px;
+    height: 40px;
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.btn-vermas:hover {
+background-color: #ffaa33;
+}
+
+/* ====== BOTÓN BUSCAR ====== */
+.Busq {
+    position: fixed;
+    top: 85%;
+    left: 93%;
+    width: 60px;
+    height: 60px;
+    background-color: #ff7b00;
+    color: #fff;
+    border: none;
+    font-size: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 3;
+}
+.Busq:hover {
+    background-color: #ffaa33;
+}
+
+/* ====== MULTI-RECUADROS ====== */
+.MR1, .MR2, .MR3, .MR4, .MR5 {
+    background-color: rgb(0, 146, 129);
+    position: absolute;
+}
+.MR1 { top: 4%; left: 3%; width: 20%; height: 93%; }
+.MR2 { top: 4%; left: 25%; width: 22%; height: 93%; }
+.MR3 { top: 4%; left: 49%; width: 26%; height: 93%; }
+.MR4 { top: 4%; left: 77%; width: 20%; height: 43%; }
+.MR5 { top: 54%; left: 77%; width: 20%; height: 43%; }
+
+/* ====== BOTÓN BAJO ====== */
+.But1 {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    width: 80%;
+    height: 7%;
+    border: none;
+    background-color: #ffd902;
+}
+.But1:hover {
+    background-color: #386287;
+}
+
+/* ====== REDES ====== */
+.Red1, .Red2, .Red3 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+.Red1 { left: 0; }
+.Red2 { left: 35%; }
+.Red3 { left: 70%; }
+
+/* ====== CUESTIONARIO ====== */
+.cuestionario-container {
+    background: #222;
+    padding: 20px;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 10px;
+    color: white;
+}
+
+.cuestionario-container input,
+.cuestionario-container textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.cuest-btn {
+    width: 100%;
+    padding: 12px;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cuest-btn:hover {
+    background: rgb(255, 170, 70);
+}
+
+.respuesta {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rec01 {
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    height: 5%;
+    background: #fff;
+    z-index: 3;
+}
+
+#rotarPantalla {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+@media (orientation: portrait) {
+    #rotarPantalla {
+        display: flex;
+    }
+}
